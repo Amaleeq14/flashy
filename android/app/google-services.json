@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1037665528914",
+    "project_id": "flashy-802ae",
+    "storage_bucket": "flashy-802ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037665528914:android:1ccfd378b4de2305c5438b",
+        "android_client_info": {
+          "package_name": "com.example.flashy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037665528914-hv2irr4r2pkgp85b2uo4fkb14isseca3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB76eQYErTuObv0Y1deAemUTsly1BHzpcE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037665528914-hv2irr4r2pkgp85b2uo4fkb14isseca3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
