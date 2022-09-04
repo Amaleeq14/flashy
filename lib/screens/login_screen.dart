@@ -25,11 +25,13 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Hero(
-              tag: 'logo',
-              child: Container(
-                height: 200.0,
-                child: Image.asset('images/logo.png'),
+            Flexible(
+              child: Hero(
+                tag: 'logo',
+                child: Container(
+                  height: 200.0,
+                  child: Image.asset('images/logo.png'),
+                ),
               ),
             ),
             SizedBox(
@@ -62,8 +64,8 @@ class _LoginScreenState extends State<LoginScreen> {
               colour: Colors.lightBlueAccent,
               onPressed: () async {
                 try {
-                  final user = await _auth.createUserWithEmailAndPassword(
-                      email: email.trim(), password: password);
+                  final user = await _auth.signInWithEmailAndPassword(
+                      email: email, password: password);
                   if (user != null) {
                     Navigator.pushNamed(context, ChatScreen.id);
                   }
@@ -76,6 +78,5 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     );
-
   }
 }
